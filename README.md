@@ -1,24 +1,26 @@
 # README
+Desafio Técnico </br>
+A proposta desse desafio e ser algo simples e rápido. Você não precisará se preocupar com banco de dados. O funcionamento dele também será bem simples, de modo que você possa focar no que mais importa para nós: qualidade de código.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+O que você deve fazer</br>
+A nossa proposta é que você faça uma API usando Ruby on Rails. Esta API não irá utilizar banco de dados e não deverá conter views. Ela deve ter apenas UM endpoint. Além disso, para montar a resposta deste endpoint, sua API deverá consumir a seguinte API externa: https://rickandmortyapi.com/documentation
 
-Things you may want to cover:
+A RickAndMortyAPI disponibiliza informações sobre os personagens, episódios, e outras informações referentes ao seriado Rick and Morty.
 
-* Ruby version
+O endpoint que você deve disponibilizar na sua API deve ser um GET que recebe o id de um personagem e retorna A DATA em que aquele personagem foi ao ar pela primeira vez.
 
-* System dependencies
+# Instalação
+Antes é necessário seguir os seguintes passos:
+* Instalar Redis para uso do sidekiq
+  > sudo apt install redis-server
 
-* Configuration
+* Instalar as gems
+  > bundle </br>
 
-* Database creation
+* Executar o servidor
+  > rails s
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# API
+Versão 1:
+* Personagens: Consultar pelo ID e obter informações
+  > /api/v1/characters?id=12
