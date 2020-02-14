@@ -12,7 +12,9 @@ O endpoint que você deve disponibilizar na sua API deve ser um GET que recebe o
 # Instalação
 Antes é necessário seguir os seguintes passos:
 * Instalar Redis para uso do sidekiq
-  > sudo apt install redis-server
+    > OSX - brew install redis </br>
+    > Linux - sudo apt-get install redis </br>
+    > Windows (WSL) - sudo apt-get install redis </br>
 
 * Instalar as gems
   > bundle </br>
@@ -23,4 +25,4 @@ Antes é necessário seguir os seguintes passos:
 # API
 Versão 1:
 * Personagens: Consultar pelo ID e obter informações
-  > /api/v1/characters?id=12
+  > /api/v1/characters/:id
